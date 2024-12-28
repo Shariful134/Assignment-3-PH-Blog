@@ -38,7 +38,7 @@ const deleteBlogbyAdminIntoDB = async (id: string) => {
 
   //check if the user is Exists
   if (!blog) {
-    throw new AppError(StatusCodes.BAD_REQUEST, 'Blog is not Found!');
+    throw new AppError(StatusCodes.NOT_FOUND, 'Blog is not Found!');
   }
 
   const result = await Blog.findByIdAndDelete(id);
