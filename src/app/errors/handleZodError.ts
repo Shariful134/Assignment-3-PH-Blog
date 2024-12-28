@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ZodError, ZodIssue } from 'zod';
 import { TErrorSources, TGenericErrorResponse } from '../interface/error';
 
